@@ -1,5 +1,5 @@
 [package]
-name = "spotify_neural_network"
+name = "neural_network"
 version = "0.1.0"
 edition = "2021"
 
