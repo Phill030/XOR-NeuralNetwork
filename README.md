@@ -7,6 +7,7 @@
 </div>
 
 - [Getting Started](#getting-started)
+- [Credits](#credits)
 - [Features](#features)
 - [Usage](#usage)
 
@@ -19,6 +20,8 @@ This project implements a basic neural network from scratch in Rust. It includes
   <img width="600px" src="https://github.com/Phill030/XOR-NeuralNetwork/assets/50775241/c847c239-070c-4643-9aa9-f290fedfed94" />
 </div>
 
+# Credits
+Thanks to the help of [@FrozenAssassine](https://github.com/FrozenAssassine) and [@finn-freitag](https://github.com/finn-freitag/) I've built this NeuralNetwork from scratch!
 
 # Features
 - **Layered Architecture:** Includes input, hidden, and output layers.
