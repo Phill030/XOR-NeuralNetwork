@@ -35,7 +35,7 @@ Thanks to the help of [@FrozenAssassine](https://github.com/FrozenAssassine) and
 1. Clone the repository to your local machine:
 ```bash
 git clone https://github.com/Phill030/XOR-NeuralNetwork.git
-cd neural-network-rust
+cd XOR-NeuralNetwork
 ```
 
 2. Build the project using Cargo:
