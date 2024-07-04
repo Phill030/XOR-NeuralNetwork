@@ -1,0 +1,8 @@
+[package]
+name = "spotify_neural_network"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+plotters = "0.3.6"
+rand = "0.8.5"
