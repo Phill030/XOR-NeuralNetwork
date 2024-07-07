@@ -18,7 +18,7 @@ This project implements a basic neural network from scratch in Rust. It includes
 
 <div align="center">
   <img width="600px" src="https://github.com/Phill030/XOR-NeuralNetwork/assets/50775241/c847c239-070c-4643-9aa9-f290fedfed94" />
-  <p><sup>Cross-Entropy loss function</sup></p>
+  <p><sup><a href="https://github.com/Phill030/XOR-NeuralNetwork/blob/99a0949b954896780417cbda9e5751aa6cbde0ad/src/main.rs#L61">Cross-Entropy loss function</a></sup></p>
 </div>
 
 # Credits
