@@ -14,7 +14,8 @@
 ---
 
 # Getting Started
-This project implements a basic neural network from scratch in Rust. It includes an input layer, hidden layers, and an output layer, allowing for flexible configuration and training. The neural network uses the sigmoid activation function and supports backpropagation for training. Additionally, the project includes functionality to visualize the training loss over epochs using the plotters crate.
+
+This project implements a basic neural network from scratch in Rust. It includes an input layer, dense layers, and an output layer, allowing for flexible configuration and training. The neural network uses the sigmoid activation function and supports backpropagation for training. Additionally, the project includes functionality to visualize the training loss over epochs using the plotters crate.
 
 <div align="center">
   <img width="600px" src="https://github.com/Phill030/XOR-NeuralNetwork/assets/50775241/c847c239-070c-4643-9aa9-f290fedfed94" />
@@ -22,24 +23,28 @@ This project implements a basic neural network from scratch in Rust. It includes
 </div>
 
 # Credits
+
 Thanks to the help of [@FrozenAssassine](https://github.com/FrozenAssassine) and [@finn-freitag](https://github.com/finn-freitag/) I've built this NeuralNetwork from scratch!
 
 # Features
-- **Layered Architecture:** Includes input, hidden, and output layers.
+
+- **Layered Architecture:** Includes input, dense, and output layers.
 - **Feed Forward:** Implemented feed-forward algorithm.
 - **Backpropagation:** Training through backpropagation using gradient descent.
 - **Cross-Entropy Loss:** Utilized cross-entropy loss for binary classification.
 - **Visualization:** Plot training loss over epochs using plotters library.
 
-
 # Usage
+
 1. Clone the repository to your local machine:
+
 ```bash
 git clone https://github.com/Phill030/XOR-NeuralNetwork.git
 cd XOR-NeuralNetwork
 ```
 
 2. Build the project using Cargo:
+
 ```bash
 cargo run
 ```
