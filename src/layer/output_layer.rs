@@ -35,8 +35,8 @@ impl Layer for OutputLayer {
     }
 
     fn set_previous_layer(&mut self, layer: Option<*const Box<dyn Layer>>) {
-        if let Some(previous_hidden) = layer {
-            self.previous_layer = Some(previous_hidden)
+        if let Some(previous_dense) = layer {
+            self.previous_layer = Some(previous_dense)
         } else {
             panic!("Previous layer must not be None")
         }

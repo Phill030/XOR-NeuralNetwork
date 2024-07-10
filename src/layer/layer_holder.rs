@@ -1,5 +1,5 @@
 use super::Layer;
-use crate::layer::{hidden_layer::HiddenLayer, input_layer::InputLayer, output_layer::OutputLayer};
+use crate::layer::{dense_layer::DenseLayer, input_layer::InputLayer, output_layer::OutputLayer};
 use rand::{rngs::ThreadRng, Rng};
 
 #[derive(Debug)]
@@ -34,7 +34,7 @@ impl LayerHolder {
             let prev_layer = &mut prev_layer[i - 1];
             let current_layer = &mut current_layer[0];
 
-            if current_layer.as_any().is::<HiddenLayer>() || current_layer.as_any().is::<OutputLayer>() {
+            if current_layer.as_any().is::<DenseLayer>() || current_layer.as_any().is::<OutputLayer>() {
                 current_layer.set_weights(
                     (0..current_layer.neuron_values().len() * prev_layer.neuron_values().len())
                         .map(|_| self.rng.gen_range(-1.0..1.0))

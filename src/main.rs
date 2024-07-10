@@ -1,6 +1,6 @@
 use std::f32::EPSILON;
 
-use layer::{hidden_layer::HiddenLayer, input_layer::InputLayer, layer_holder::LayerHolder, output_layer::OutputLayer};
+use layer::{dense_layer::DenseLayer, input_layer::InputLayer, layer_holder::LayerHolder, output_layer::OutputLayer};
 use plotters::{
     backend::BitMapBackend,
     chart::ChartBuilder,
@@ -17,7 +17,7 @@ fn main() {
     let mut rng = rand::thread_rng();
     let mut layer_holder = LayerHolder::new(&rng)
         .add_layer(InputLayer::new(2))
-        .add_layer(HiddenLayer::new(4, &mut rng))
+        .add_layer(DenseLayer::new(4, &mut rng))
         .add_layer(OutputLayer::new(1, &mut rng))
         .build();
 

@@ -1,6 +1,6 @@
 use std::{any::Any, fmt::Debug};
 
-pub mod hidden_layer;
+pub mod dense_layer;
 pub mod input_layer;
 pub mod layer_holder;
 pub mod output_layer;

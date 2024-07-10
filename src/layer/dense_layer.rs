@@ -4,7 +4,7 @@ use rand::{rngs::ThreadRng, Rng};
 use std::{any::Any, fmt::Debug};
 
 #[derive(Debug, Default, Clone)]
-pub struct HiddenLayer {
+pub struct DenseLayer {
     pub biases: Vec<f32>,
     pub neuron_values: Vec<f32>,
     pub errors: Vec<f32>,
@@ -13,7 +13,7 @@ pub struct HiddenLayer {
     pub following_layer: Option<*const Box<dyn Layer>>,
 }
 
-impl Layer for HiddenLayer {
+impl Layer for DenseLayer {
     fn as_any(&self) -> &dyn Any {
         self
     }
@@ -107,7 +107,7 @@ impl Layer for HiddenLayer {
     }
 }
 
-impl HiddenLayer {
+impl DenseLayer {
     pub fn new(size: usize, rng: &mut ThreadRng) -> Self {
         Self {
             biases: (0..size).map(|_| rng.gen_range(-1.0..1.0)).collect(),
